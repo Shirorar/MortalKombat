@@ -76,11 +76,9 @@ function whoLoser(player1, player2) {
 
     if (player1.hp == 0 && player2.hp == 0) {
         lostTitleDiv.innerText = 'No Winner';
-    }
-    if (player1.hp == 0) {
+    } else if (player1.hp == 0) {
         lostTitleDiv.innerText = 'Win '+player2.name ;
-    }
-    if (player2.hp == 0){
+    } else if (player2.hp == 0){
         lostTitleDiv.innerText = 'Win '+player1.name ;
     }
     document.querySelector('.arenas').appendChild(lostTitleDiv);
